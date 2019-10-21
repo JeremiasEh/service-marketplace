@@ -1,0 +1,40 @@
+{
+  "name": "service-marketplace",
+  "version": "1.0.0-alpha.0",
+  "description": "A service/asset marketplace as 2nd layer on the tangle",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "nodemon --exec babel-node test/index.test.js",
+    "build": "babel src --out-dir dist --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremiasEh/service-marketplace.git"
+  },
+  "keywords": [
+    "IOTA",
+    "MAM",
+    "tangle",
+    "Marketplace",
+    "Service"
+  ],
+  "author": "tangleMesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremiasEh/service-marketplace/issues"
+  },
+  "homepage": "https://github.com/JeremiasEh/service-marketplace#readme",
+  "dependencies": {
+    "@iota/core": "^1.0.0-beta.21",
+    "@iota/mam": "^0.7.3",
+    "lz-string": "^1.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "nodemon": "^1.19.4"
+  }
+}
